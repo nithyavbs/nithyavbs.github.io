@@ -1,8 +1,110 @@
 <html>
-    <head></head>
-    <body></body>
-    <h1>
-        Hello World!!
-    </h1>
-</body>
+
+<head>
+    <title>Resume</title>
+    <script>
+        function showDateTime() {
+            var dt = new Date();
+document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2))+":"+ (("0"+dt.getSeconds()).slice(-2));
+            // document.getElementById("datetime").innerHTML = new Date();
+            var refresh = 1000;
+            mytime = setTimeout('showDateTime()', refresh)
+        }
+
+    </script>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 5px;
+        }
+
+        tr:nth-child(even) {
+            background-color: powderblue;
+        }
+    </style>
+</head>
+
+<body onload="showDateTime()" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+
+    <body onload="showDateTime()" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+        <div Style="text-align:center;padding: 5px">
+            <img src="img/nithya.jpg" style="border-radius:100%; alt:Avatar; width:10%; height:20%">
+            <!-- <h3 style="display: block; font-size: 2em;margin-top: 0.05em;
+            margin-bottom: 0.05em; margin-left: 0; margin-right: 0; font-weight: bold;">Nithya Balaji</h3> -->
+               <p style="font-size:20; font-weight:bold;" >Nithya Balaji<br>
+               <a href="mailto:nithiblossom@gmail.com" target="_blank" style="font-size:15" >nithiblossom@gmail.com</a></h5> 
+            </p>
+             </div>
+        <p style="background-color:powderblue;">
+            <font size="5">
+                <strong>Objective</strong>
+            </font>
+        </p>
+        <p>To obtain a challenging and rewarding software engineer position where a degree in computer engineering and 3
+            years of experience as a programmer will be fully utilized.</p>
+        <h5>
+            <p style="background-color:powderblue; font-size:25;">Skills</p>
+        </h5>
+        <ul>
+            <li><strong>HTML</strong></li>
+            <li><B>CSS</B></li>
+            <li><B>JAVA</B></li>
+        </ul>
+        <h2>
+            <p style="background-color:powderblue; font-size:25;">Education</p>
+        </h2>
+        <table id="myTable" border="1">
+            <tr>
+                <th style="column-width: 20%;text-align:center">Course</th>
+                <th style="column-width: 20%;text-align:center">Institution</th>
+                <th style="column-width: 20%;text-align:center">Year of passing</th>
+                <th style="column-width: 20%;text-align:center">Percentage(%)</th>
+            </tr>
+            <tr>
+                <td>M.Tech</td>
+                <td>SNS College of Enginerring</td>
+                <td style="text-align:center">2014</td>
+                <td style="text-align:center">80</td>
+            </tr>
+            <tr>
+                <td>B.Tech</td>
+                <td>Mahendra Engineering College</td>
+                <td style="text-align:center">2009</td>
+                <td style="text-align:center">75</td>
+            </tr>
+            <tr>
+                <td>HSC</td>
+                <td>Govt.Hr.Sec.School</td>
+                <td style="text-align:center">2005</td>
+                <td style="text-align:center">87</td>
+            </tr>
+            <tr>
+                <td>SSLC</td>
+                <td>Govt.Hr.Sec.School</td>
+                <td style="text-align:center">2003</td>
+                <td style="text-align:center">92</td>
+            </tr>
+        </table>
+        <h2>
+            <p style="background-color:powderblue; font-size:25;">Declaration</p>
+        </h2>
+        <p>I solemnly declare that all the information furnished in this document is free of errors to the best of my
+            knowledge.</p>
+        <h3>
+            <p style="text-align:right;">Yours Sincerely,</p>
+        </h3>
+        <p style="text-align:right;text-transform: uppercase;">Nithya</p>
+        <p style="text-align:right;"><b>Place:</b>Coimbatore</p>
+        <p style="text-align:right;"><b>Date:</b>
+            <span id="datetime">dd-mm-yyyy></span>
+        </p>
+    </body>
+
 </html>
