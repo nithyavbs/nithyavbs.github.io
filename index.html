@@ -17,16 +17,17 @@ document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +
             border-collapse: collapse;
             border: 1px solid black;
             width:100%;
+            text-align:center;
         }
 
-        th,tr,td {
+        /* th,tr,td { */
             /* column-width: 20%; */
             /* padding: 5px; */
             /* padding-left: 5px; */
             /* padding-bottom:3px; */
             /* font-size:16px; */
-            text-align:center;
-        }
+            /* text-align:center; */
+        /* } */
 
         tr:nth-child(even) {
             background-color: powderblue;
@@ -69,7 +70,7 @@ document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +
         <h2>
             <p style="background-color:powderblue; font-size:25;">Education</p>
         </h2>
-        <table id="myTable" border="1">
+        <table id="myTable" border="1" class="table" class="th,tr,td">
             <tr>
                 <th>Course</th>
                 <th>Institution</th>
@@ -79,26 +80,26 @@ document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +
             <tr>
                 <td>M.Tech</td>
                 <td>SNS College of Engineering</td>
-                <td style="text-align:center">2014</td>
-                <td style="text-align:center">80</td>
+                <td>2014</td>
+                <td>80</td>
             </tr>
             <tr>
                 <td>B.Tech</td>
                 <td>Mahendra Engineering College</td>
-                <td style="text-align:center">2009</td>
-                <td style="text-align:center">75</td>
+                <td>2009</td>
+                <td>75</td>
             </tr>
             <tr>
                 <td>HSC</td>
                 <td>Govt.Hr.Sec.School</td>
-                <td style="text-align:center">2005</td>
-                <td style="text-align:center">87</td>
+                <td>2005</td>
+                <td>87</td>
             </tr>
             <tr>
                 <td>SSLC</td>
                 <td>Govt.Hr.Sec.School</td>
-                <td style="text-align:center">2003</td>
-                <td style="text-align:center">92</td>
+                <td>2003</td>
+                <td>92</td>
             </tr>
         </table>
         <h2>
