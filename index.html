@@ -5,113 +5,165 @@
     <script>
         function showDateTime() {
             var dt = new Date();
-document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2))+":"+ (("0"+dt.getSeconds()).slice(-2));
+            document.getElementById("datetime").innerHTML = (("0" + dt.getDate()).slice(-2)) + "." + (("0" + (dt.getMonth() + 1)).slice(-2)) + "." + (dt.getFullYear()) + " " + (("0" + dt.getHours()).slice(-2)) + ":" + (("0" + dt.getMinutes()).slice(-2)) + ":" + (("0" + dt.getSeconds()).slice(-2));
             // document.getElementById("datetime").innerHTML = new Date();
             var refresh = 1000;
             mytime = setTimeout('showDateTime()', refresh)
         }
 
     </script>
-    <style>
-        table {
-            border-collapse: collapse;
-            border: 1px solid black;
-            width:100%;
-            text-align:center;
-            font-size:large;
-        }
 
-        /* th,tr,td { */
-            /* column-width: 20%; */
-            /* padding: 5px; */
-            /* padding-left: 5px; */
-            /* padding-bottom:3px; */
-            /* font-size:16px; */
-            /* text-align:center; */
-        /* } */
-
-        tr:nth-child(even) {
-            background-color: powderblue;
-        }
-        .avatar {
-            vertical-align: middle;
-            width: 75px;
-            height: 75px;
-            border-radius: 50%;
-        }
-    </style>
 </head>
 
 <body onload="showDateTime()" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
 
     <body onload="showDateTime()" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
         <div Style="text-align:center;padding: 5px">
-           <img src="img/nithya.jpg" alt="Avatar" class="avatar">
+            <img src="img/nithya.jpg" alt="Avatar" class="avatar">
+            <!-- <img src="img/nithya.jpg" style="border-radius:100%; alt:Avatar; width:10%; height:20%;"> -->
             <!-- <h3 style="display: block; font-size: 2em;margin-top: 0.05em;
             margin-bottom: 0.05em; margin-left: 0; margin-right: 0; font-weight: bold;">Nithya Balaji</h3> -->
-               <p style="font-size:20; font-weight:bold;" >Nithya Balaji<br>
-               <a href="mailto:nithiblossom@gmail.com" target="_blank" style="font-size:15" >nithiblossom@gmail.com</a></h5> 
+            <p style="font-size:20; font-weight:bold;">Nithya Balaji<br>
+                <a href="mailto: nithivbs@gmail.com" target="_blank" style="font-size:15;">nithivbs@gmail.com</a></h5>
             </p>
         </div>
-        <p style="background-color:powderblue;">
+        <p style="background-color:rgba(15, 54, 161, 0.308);">
             <font size="5">
                 <strong>Objective</strong>
             </font>
         </p>
-        <p>To obtain a challenging and rewarding software engineer position where a degree in computer engineering and 3
-            years of experience as a programmer will be fully utilized.</p>
+        <p>To give my software career a solid start by joining eminent and highly professional software company and
+            contribute
+            to the success of the company by outstanding performance and thereby advancing my career.</p>
         <h5>
-            <p style="background-color:powderblue; font-size:25;">Skills</p>
+            <p style="background-color:rgba(15, 54, 161, 0.308); font-size:25;">Technical Skills</p>
         </h5>
         <ul>
-            <li><strong>HTML</strong></li>
+            <li><strong>HTML5</strong></li>
             <li><B>CSS</B></li>
-            <li><B>JAVA</B></li>
+            <li><B>JavaScript</B></li>
+            <li><B>Ionic</B></li>
+            <li><B>Angular</B></li>
+            <li><B>Node JS</B></li>
+            <li><B>MySql</B></li>
         </ul>
         <h2>
-            <p style="background-color:powderblue; font-size:25;">Education</p>
+            <p style="background-color:rgba(15, 54, 161, 0.308); font-size:25;">Education</p>
         </h2>
-        <table id="myTable" border="1" class="table" class="th,tr,td">
-            <tr>
+        <style>
+            table {
+                border-collapse: collapse;
+                border: 1px solid black;
+                width: 100%;
+                text-align: center;
+                font-size: large;
+            }
+
+            /* th,tr,td { */
+            /* column-width: 20%; */
+            /* padding: 5px; */
+            /* padding-left: 5px; */
+            /* padding-bottom:3px; */
+            /* font-size:16px; */
+            /* text-align:center; */
+            /* } */
+
+            tr:nth-child(even) {
+                background-color: rgba(93, 153, 192, 0.281);
+            }
+
+            .avatar {
+                vertical-align: middle;
+                width: 125px;
+                height: 125px;
+                border-radius: 100%;
+            }
+        </style>
+        <table id="myTable" class="table">
+            <tr style="background-color:rgba(15, 54, 161, 0.308)">
                 <th>Course</th>
                 <th>Institution</th>
                 <th>Year of passing</th>
                 <th>Percentage(%)</th>
+                <th>Class</th>
             </tr>
             <tr>
-                <td>M.Tech</td>
-                <td>SNS College of Engineering</td>
+                <td><strong>M.Tech (IT)</strong></td>
+                <td>SNS College of Engineering-Coimbatore</td>
                 <td>2014</td>
                 <td>80</td>
+                <td>First Class</td>
             </tr>
             <tr>
-                <td>B.Tech</td>
-                <td>Mahendra Engineering College</td>
+                <td><strong>B.Tech (IT)</strong></td>
+                <td>Mahendra Engineering College-Namakkal</td>
                 <td>2009</td>
-                <td>75</td>
+                <td>76</td>
+                <td>First Class with Distinction</td>
             </tr>
             <tr>
-                <td>HSC</td>
-                <td>Govt.Hr.Sec.School</td>
+                <td><strong>HSC</strong></td>
+                <td>Govt.Hr.Sec.School-Rasipuram</td>
                 <td>2005</td>
-                <td>87</td>
+                <td>88</td>
+                <td></td>
             </tr>
             <tr>
-                <td>SSLC</td>
-                <td>Govt.Hr.Sec.School</td>
+                <td><strong>SSLC</strong></td>
+                <td>Govt.Hr.Sec.School-Rasipuram</td>
                 <td>2003</td>
                 <td>92</td>
+                <td>School Topper</td>
             </tr>
         </table>
         <h2>
-            <p style="background-color:powderblue; font-size:25;">Declaration</p>
+            <p style="background-color:rgba(15, 54, 161, 0.308); font-size:25;">Work Experience</p>
         </h2>
-        <p>I solemnly declare that all the information furnished in this document is free of errors to the best of my
-            knowledge.</p>
+        <ul>
+            <li>Lecturer - Pavai Varam Polytechnic College, Namakkal</li>
+            <li>Software Engineer - Mint Cubes Technology, Bangalore</li>
+            <li>Programmer - CARE Trust Institute, Namakkal</li>
+        </ul>
+        <h2>
+            <p style="background-color:rgba(15, 54, 161, 0.308); font-size:25;">Achievements</p>
+        </h2>
+        <ul>
+            <li><strong>Won prizes and silver medals</strong> for Best Academic Performance in <b>HSC and SSLC</b>.</li>
+            <li>Got Certificates for <strong>100% attendance</strong>on each year in <b>B.Tech</b>.</li>
+            <li>Got <b>Third prize</b> for <b>academic rank</b> on 2nd Semester in <b>M.Tech</b>.</li>
+        </ul>
+        <h2>
+            <p style="background-color:rgba(15, 54, 161, 0.308); font-size:25;">Co-Curricular Activities</p>
+        </h2>
+        <ul>
+        <li>Taken seminars & Coordinator in Department symposiums & conferences.</li>
+        <li>Member in CSI student branch of SNS College of Engineering in the year of 2012-2014.</li>
+        <li>Member of IEEE in the academic year of 2013 -2014.</li>
+        <li>Done a certified course <b>'C'</b>.</li>
+    </ul>
+        <h2>
+            <p style="background-color:rgba(15, 54, 161, 0.308); font-size:25;">Extra Curricular Activities</p>
+        </h2>
+        <ul>
+            <li>
+                Won a prize in National Level Quiz Competition organized by Muthayammal Engineering College
+            </li>
+            <li>
+                Participated in Zonal level programming contest organized by <b>Infosys campus connect</b>.
+            </li>
+            <li>Participated in Inter College Chess Competition</li>
+            <li>Participated in dance at school level.</li>
+        </ul>
+        <h2>
+            <p style="background-color:rgba(15, 54, 161, 0.308); font-size:25;">Declaration</p>
+        </h2>
+        <p>I (NITHYA) hereby declare that the above furnished statements are true to best of my Knowledge and
+
+            belief.</p>
         <h3>
             <p style="text-align:right;">Yours Sincerely,</p>
         </h3>
-        <p style="text-align:right;text-transform: uppercase;">Nithya</p>
+        <p style="text-align:right;text-transform: uppercase;"><em>Nithya Balaji</em></p>
         <p style="text-align:right;"><b>Place:</b>Coimbatore</p>
         <p style="text-align:right;"><b>Date:</b>
             <span id="datetime">dd-mm-yyyy></span>
