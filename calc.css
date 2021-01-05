@@ -24,7 +24,7 @@ html {
   }
    .calculator-screen {
     width: 100%;
-    font-size: 5rem;
+    font-size: unset;
     height: 66px;
     border: 5px;
     background-color: #f7f0f0;
