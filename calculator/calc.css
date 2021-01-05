@@ -1,6 +1,6 @@
 html {
     font-size: 62.5%;
-    box-sizing: border-box;
+    box-sizing:border-box;
   }
   
   *, *::before, *::after {
@@ -19,7 +19,7 @@ html {
     position:fixed;
     top:60%;
     left:50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-55%, -50%);
     width: 400px;
   }
    .calculator-screen {
