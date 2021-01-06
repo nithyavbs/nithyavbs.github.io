@@ -1,9 +1,125 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    </head>
-    <body>
-        <h1>Mark List</h1>
-    </body>
+
+<head>
+    <title>Reading JSON</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        th {
+            text-align: center;
+            padding: 8px;
+            background-color: #c2aaaa;
+        }
+    </style>
+    <script>
+        function sortTable() {
+            var table, rows, switching, i, x, y, shouldSwitch;
+            table = document.getElementById("studentsTable");
+            switching = true;
+            /* Make a loop that will continue until
+            no switching has been done: */
+            while (switching) {
+                // Start by saying: no switching is done:
+                switching = false;
+                rows = table.rows;
+                /* Loop through all table rows (except the
+                first, which contains table headers): */
+                for (i = 1; i < (rows.length - 1); i++) {
+                    // Start by saying there should be no switching:
+                    shouldSwitch = false;
+                    /* Get the two elements you want to compare,
+                    one from current row and one from the next: */
+                    x = rows[i].getElementsByTagName("TD")[6];
+                    y = rows[i + 1].getElementsByTagName("TD")[6];
+                    // Check if the two rows should switch place:
+                    if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                        // If so, mark as a switch and break the loop:
+                        // If greater than mean ascending order
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+                if (shouldSwitch) {
+                    /* If a switch has been marked, make the switch
+                    and mark that a switch has been done: */
+                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                    switching = true;
+                }
+            }
+        }
+
+        function populateTable() {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var students = JSON.parse(this.responseText);
+                    renderJsonData(students);
+                    sortTable();
+                }
+            };
+            xmlhttp.open("GET", "students.json", true);
+            xmlhttp.send();
+        }
+
+        function renderJsonData(students) {
+            var table = document.getElementById("studentsTable");
+            for (var i = 0; i < students.length; i++) {
+                var student = students[i];
+                var row = table.insertRow(i + 1);
+                var col1 = row.insertCell(0);
+                var col2 = row.insertCell(1);
+                var col3 = row.insertCell(2);
+                var col4 = row.insertCell(3);
+                var col5 = row.insertCell(4);
+                var col6 = row.insertCell(5);
+                var col7 = row.insertCell(6);
+                var col8 = row.insertCell(7);
+
+                col2.style.textAlign = "right";
+                col3.style.textAlign = "right";
+                col4.style.textAlign = "right";
+                col5.style.textAlign = "right";
+                col6.style.textAlign = "right";
+                col7.style.textAlign = "right";
+                col8.style.textAlign = "right";
+
+                col1.innerHTML = student.name;
+                col2.innerHTML = student.tamil;
+                col3.innerHTML = student.english;
+                col4.innerHTML = student.maths;
+                col5.innerHTML = student.science;
+                col6.innerHTML = student.social;
+
+                var total = student.tamil + student.english + student.maths + student.science + student.social;
+                var avg = (total / 5).toFixed(2);
+
+                col7.innerHTML = total;
+                col8.innerHTML = avg;
+            }
+        }
+    </script>
+</head>
+
+<body onload="populateTable()">
+    <table border="1" id="studentsTable" class="table" class="th">
+        <thead text-align: left; padding: 8px;>
+            <tr>
+                <th>Name</th>
+                <th>Tamil</th>
+                <th>English</th>
+                <th>Maths</th>
+                <th>Science</th>
+                <th>Social</th>
+                <th>Total</th>
+                <th>%</th>
+            </tr>
+        </thead>
+    </table>
+</body>
 
 </html>
