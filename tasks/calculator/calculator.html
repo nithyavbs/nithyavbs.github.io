@@ -1,7 +1,7 @@
 <html>
     <head>
     <titlt></titlt>
-    <link rel="stylesheet" type="text/css" href="calc.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     </head>
@@ -20,7 +20,7 @@
       <button type="button" class="operator" value="-" onclick="dis('-')">-</button>
       <button type="button" class="operator" value="*" onclick="dis('*')">*</button>
       <button type="button" class="operator" value="/" onclick="dis('/')">/</button>
-  
+      
       <button type="button" value="7" onclick="dis('7')">7</button>
       <button type="button" value="8" onclick="dis('8')">8</button>
       <button type="button" value="9" onclick="dis('9')">9</button>
@@ -39,6 +39,8 @@
       <button type="button" value="0" onclick="dis('0')">0</button>
       <button type="button" class="decimal" value="." onclick="dis('.')">.</button>
       <button type="button" class="all-clear" value="c" onclick="clr()">C</button>
+      <button id="addMemBut" type="button" class="btn btn-warning numBut" onclick="copyButPress()">MC</button>
+      <button id="numBut" type="button" class="btn btn-warning numBut" onclick="pasteButPress()">MP</button>
   
       <button type="button" class="equal-sign operator" value="=" onclick="solve()">=</button>
   

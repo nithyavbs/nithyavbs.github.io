@@ -8,8 +8,8 @@
          //function that evaluates the digit and return result 
          function solve() 
          { 
-             let x = document.getElementById("result").value 
-             let y = eval(x) 
+             var x = document.getElementById("result").value 
+             var y = eval(x) 
              document.getElementById("result").value = y 
          } 
            
