@@ -1,9 +1,9 @@
-h1{
+/* h1{
     color: white;
     text-align: center;
     font-weight:900;
 }
- 
+  */
 center {
     text-align:right;
     border: 3px solid rgb(225, 233, 225);
@@ -17,23 +17,6 @@ body{
 	margin: 30px 0px;
 	font-weight: bold;
 }
-#hl1 {
-	margin-top: 10px;
-	color: #FFCD5D;
-	font-size: large;
-}
-
-#hl2 {
-	color: greenyellow;
-	font-size: large;
-}
-
-#hl3{
-	color: #04404b;
-	margin-bottom: 30px;
-	font-size: large;
-}
-
   #add {
 	border: none;
 	padding: 12px 15px;
