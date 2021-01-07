@@ -3,6 +3,9 @@ function addItem() {
     var li = document.createElement("li"); 
     var ul = document.querySelector("ul");
     var new_item = document.getElementById("newItem").value
+    if (new_item == '') {
+      alert("You must add item!");
+         } else {
     // creates an element "li"
 	li.appendChild(document.createTextNode(new_item));
     ul.appendChild(li); //adds li to ul
@@ -14,5 +17,6 @@ function addItem() {
      var div = this.parentElement;
      div.parentNode.removeChild(div);
     }
+}
 }
 

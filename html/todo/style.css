@@ -17,6 +17,23 @@ body{
 	margin: 30px 0px;
 	font-weight: bold;
 }
+#hl1 {
+	margin-top: 10px;
+	color: #FFCD5D;
+	font-size: large;
+}
+
+#hl2 {
+	color: greenyellow;
+	font-size: large;
+}
+
+#hl3{
+	color: #04404b;
+	margin-bottom: 30px;
+	font-size: large;
+}
+
   #add {
 	border: none;
 	padding: 12px 15px;
@@ -45,7 +62,7 @@ ul {
 
 li {
 	list-style: none;
-	padding: 10px 20px;
+	padding: 12px 20px;
 	color: #ffffff;
 	text-transform: capitalize;
     font-weight: 600;
@@ -66,17 +83,16 @@ li:hover {
 }
 
 li > button {
-	font-weight: normal;
+	font-weight:normal;
 	background: none;
 	border: none;
 	float: right;
 	color: #025f70;
-	font-weight: 800;
+	
 }
 input {
 	border-radius: 5px;
 	min-width: 75%;
 	padding: 12px;
-    border: none;
-    font-size: x-large;
+	border: none;
 }

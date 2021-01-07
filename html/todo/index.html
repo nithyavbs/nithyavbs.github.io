@@ -9,26 +9,33 @@
 </head>
 
 <body style="background-color:rgb(47, 191, 235);">
-    <div class="jumbotron text-center" style="background-color:rgb(47, 191, 235) ;">
-        <h1 style="color:white;">WORK TO-DOS</h1>
-        <!-- <p>Enter text into the input field to add!</p>  -->
-    </div>
     <div class="container">
-        <br /><br />
+        <div class="jumbotron text-center" style="background-color:rgb(47, 191, 235) ;">
+            <h1 style="color:white;">WORK TO-DOS</h1>
+            <!-- <p>Enter text into the input field to add!</p>  -->
+        </div>
         <div class="row">
-           <div align="center" class="intro col-12">
-                <input id="newItem" type="text" placeholder="New item..." maxlength="67">
+            <div align="center" class="helpText col-12">
+                <p id="hl1">Enter text into the input field to add items to your list.</p>
+                <p id="hl2">Click the item to mark it as complete.</p>
+                <p id="hl3">Click the "X" to remove the item from your list.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div align="center" class="intro col-12">
+                <input id="newItem" type="text" style="font-size: medium;" placeholder="New item..." maxlength="67">
                 <button id="add" onclick="addItem()"><i class="glyphicon glyphicon-pencil"></i></button>
             </div>
         </div>
         <div class="row">
-			<div class="listItems col-12">
-				<ul class="col-12 offset-0 col-sm-8 offset-sm-2">
-				</ul>
-			</div>
-		</div>
-        
-    <script type="text/javascript" src="script.js"></script>
+            <div class="listItems col-12">
+                <ul class="col-12 offset-0 col-sm-8 offset-sm-2">
+                </ul>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="script.js"></script>
+    </div>
 </body>
 
 </html>
