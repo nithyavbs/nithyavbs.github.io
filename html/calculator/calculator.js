@@ -37,3 +37,36 @@ function memClr() {
     valMemStored = "";
     document.getElementById("result").value = valMemStored;
 }
+function memAdd() {
+   var val= document.getElementById("result").value;
+    if (val = '') { return }
+    valMemStored += '+' + document.getElementById("result").value;
+    valMemStored = eval(valMemStored);
+    // eqFlag = true;
+    newVal = valMemStored;
+    return 0;
+}
+
+function memSub() {
+   var val= document.getElementById("result").value;
+    if (val == '') { return }
+    valMemStored += '-' + document.getElementById("result").value;
+    valMemStored = eval(valMemStored);
+    // eqFlag = true;
+    newVal = valMemStored;
+
+}
+function memRead() {
+
+    //  document.Calc.Numbers.value='';
+
+    document.getElementById("result").value = valMemStored;
+    // eqFlag = true;
+}
+
+function memory_c() {
+    valMemStored = 0;
+    newVal='0'
+    // document.Calc.mem_win.value = '0';
+
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body style="background-color:rgb(47, 191, 235);">
+    <div class="jumbotron text-center" style="background-color:rgb(47, 191, 235) ;">
+        <h1 style="color:white;">WORK TO-DOS</h1>
+        <!-- <p>Enter text into the input field to add!</p>  -->
+    </div>
+    <div class="container">
+        <br /><br />
+        <div class="row">
+           <div align="center" class="intro col-12">
+                <input id="newItem" type="text" placeholder="New item..." maxlength="67">
+                <button id="add" onclick="addItem()"><i class="glyphicon glyphicon-pencil"></i></button>
+            </div>
+        </div>
+        <div class="row">
+			<div class="listItems col-12">
+				<ul class="col-12 offset-0 col-sm-8 offset-sm-2">
+				</ul>
+			</div>
+		</div>
+        
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

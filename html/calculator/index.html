@@ -1,6 +1,5 @@
 <html>
     <head>
-    <titlt></titlt>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -39,10 +38,11 @@
       <button type="button" value="0" onclick="dis('0')">0</button>
       <button type="button" class="decimal" value="." onclick="dis('.')">.</button>
       <button type="button" class="all-clear" value="c" onclick="clr()">C</button>
-      <button id="addMemBut" type="button" class="btn btn-warning numBut" onclick="copyButPress()">MC</button>
-      <button id="numBut" type="button" class="btn btn-warning numBut" onclick="pasteButPress()">MP</button>
-      <button id="clrMemBut" type="button" class="btn btn-warning numBut" onclick="memClr()">M-</button>
-  
+      <!-- <button id="addMemBut" type="button" class="btn btn-warning numBut" onclick="copyButPress()">M+</button> -->
+      <!-- <button id="numBut" type="button" class="btn btn-warning numBut" onclick="pasteButPress()">MP</button> -->
+      <button id="clrMemBut" type="button" class="btn btn-warning numBut" onclick="memSub()">M-</button>
+      <button id="clrMemBut" type="button" class="btn btn-warning numBut" onclick="memAdd()">M+</button>
+      <button id="clrMemBut" type="button" class="btn btn-warning numBut" onclick="memRead()">MR</button>
       <button type="button" class="equal-sign operator" value="=" onclick="solve()">=</button>
   
     </div>
