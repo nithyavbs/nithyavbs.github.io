@@ -33,7 +33,7 @@ function addItem() {
             var div = document.querySelector("li");
             div.style.setProperty('text-decoration', 'line-through');
             // div.classlist.toggle('checked');
-            
+
         }
     }
     var del_button = document.createElement("button");

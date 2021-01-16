@@ -1,37 +1,3 @@
-// var n = 10
-// var space = n - 1;
-
-
-// for (var i = 0; i < n; i++) {
-//     // loop for initially space,  
-
-//     for (var j = 0; j < space; j++) {
-//         process.stdout.write(" ");
-//     }
-    
-//     for (var j = 0; j <= i; j++) 
-//         process.stdout.write("*");
-//     console.log();
-//     space--;
-// }
-
-// // reverse order 
-// space = 0;
-
-
-// for (var i = n; i > 0; i--) {
-    
-//     for (var j = 0; j < space; j++)
-//         process.stdout.write(" ");
-
-//     for (var j= 0; j < i; j++) 
-//         process.stdout.write("*");
-
-//         // process.stdout.write('\n');
-//         console.log();
-//     space++;
-// }
-
 var n=10;
 var c;
 var k;
