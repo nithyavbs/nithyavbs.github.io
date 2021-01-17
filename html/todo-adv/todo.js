@@ -52,6 +52,7 @@ function addItem() {
        div.parentNode.removeChild(div);
         var cln=div.cloneNode(true);
        div.style.setProperty('text-decoration', 'line-through');
+       div.style.setProperty('text-decoration-color','darkred');
        var cln=div.cloneNode(true);
        document.getElementById("list2").appendChild(cln);
        //var list=document.getElementsByID("lists").value;
@@ -76,9 +77,5 @@ function addItem() {
 function removeTodo(){
     document.getElementById("list1").innerHTML = "";
     document.getElementById("list2").innerHTML = "";
-    // var clearButton = document.getElementById("clear");
-    // var list1=document.getElementById("list1");
-    // list1.parentNode.removeChild(list1);
-    // var list2=document.getElementById("list2");
-    // list2.parentNode.removeChild(list2);
+
 }
