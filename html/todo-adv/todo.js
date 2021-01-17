@@ -15,16 +15,22 @@ function addItem() {
     var ul = document.querySelector("ul");
     var ultodo = document.getElementById("todos");
     var list2=document.getElementById("list2").value;
-    if (new_item == "" && count == "") {
-
+     if ((new_item=="")){
+       
         alert("Item Should Not Be Empty!");
-
+    
     } else {
-        if (description == "") {
+        if (count == "") {
+            alert("Item COunt Should Not Be Empty!");
+            // // creates an element "li"
+            return true;
+        }
+        if(description == ""){
             alert("Item Description Should Not Be Empty!");
             // // creates an element "li"
             return true;
         }
+
         var text = JSON.stringify(itemObj.name) + JSON.stringify(itemObj.count) + JSON.stringify(itemObj.description);
         //li.innerhtml=text;
         text1 = text.replace(/"/g, " ");
