@@ -8,8 +8,8 @@
 
 <body style="background-color:rgb(47, 191, 235);text-align: center">
     <div class="container">
-        <div class="jumbotron text-center" style="background-color:rgb(47, 191, 235) ;">
-            <h1 style="color:white;">WORK TO-DO Adv</h1>
+        <div class="jumbotron text-center" style="background-color:rgb(47, 191, 235);">
+            <h1 class="header"style="color:white;font-family: 'M PLUS Rounded 1c', sans-serif;">WORK TO-DO Adv</h1>
             <!-- <p>Enter text into the input field to add!</p>  -->
         </div>
     </div>
@@ -28,10 +28,15 @@
               </ul>
         </div>
     </div>
-    <div class="completed" align="center" class="listItems col-12">
+    <div class="completed"  align="center" class="listItems col-12">
         <p>Completed Task</p>
+        <hr>
+        <!-- style="height:1px;border-width:2px;color:white;background-color:white"> -->
         <ul id="list2" class="col-12 offset-0 col-sm-8 offset-sm-2">
         </ul>
+    </div>
+    <div class="section4">
+        <button id="clear" class="btn btn-default btn-lg" onclick="removeTodo()">Clear All</button>
     </div>
     <!-- <input id="newItem"/><input id="count"/><input id="description"></input> -->
     <!-- <button id="add" onclick="addItem()">Add</button> -->

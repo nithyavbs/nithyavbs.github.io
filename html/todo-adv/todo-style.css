@@ -8,9 +8,20 @@
     text-align:right;
     border: 3px solid rgb(225, 233, 225);
   }
-
+ #clear{
+	 margin-right:40px;
+	 text-overflow: inherit;
+	 margin: 10px auto;
+	 min-width: 40px;
+	 max-width: 75%;
+	 background-color: silver;
+  }
+ * {
+	box-sizing: border-box;
+  }
 body{
-    background-color: rgb(47, 191, 235);
+	background-color: rgb(47, 191, 235);
+	font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 .completed{
 	margin-bottom:10px;
@@ -18,17 +29,58 @@ body{
 }
 p{
 	margin-block-start: 100px;
-	margin-bottom: 100px;
+	margin-bottom:0px;
+	text-align: inherit;
 	text-decoration: solid;
-	font-size: 20;
-	color: #804d00;
+	/* text-decoration: underline; */
+	font-size: 25;
+	font-weight: bold;
+	color: #fafafa;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	
 }
+hr{
+  
+width: 50%;  
+height: 0px;  
+background-color:white;
+margin-bottom: 7px;  
+margin-right: auto;  
+margin-left: auto;  
+margin-top: 9px;  
+border-width: 4px;  
+border-color:whitesmoke;
+}  
+
+
 
 .intro {
 	margin: 30px 0px;
 	font-weight: bold;
 }
-
+.btn btn-default btn-lg{
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.intro col-12{
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+#clear{
+	border:2px;
+	padding: 12px 15px;
+	margin-bottom: 50%;
+	border-radius: 5px;
+	color: #04A1BF;
+	background-color: #025F70;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.90s ease;
+	-moz-transition: all 0.75s ease;
+	-ms-transition: all 0.95s ease;
+	-o-transition: all 0.75 ease;
+    font-weight: normal;
+	font-size: larger;
+	text-align-last: inherit;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
   #add {
 	border: none;
 	padding: 12px 15px;
@@ -41,7 +93,8 @@ p{
 	-ms-transition: all 0.75s ease;
 	-o-transition: all 0.75 ease;
     font-weight: normal;
-    font-size: larger;
+	font-size: larger;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 #add:hover{
@@ -75,6 +128,7 @@ position:relative;
 	-moz-transition: all 0.5s ease;
 	-ms-transition: all 0.5s ease;
 	-o-transition: all 0.5 ease;
+	font-family: 'M PLUS Rounded 1c', sans-serif
 }
 
 li:hover {
@@ -82,30 +136,13 @@ li:hover {
 }
 
 li > button {
-	font-weight:lighter;
+	font-weight:bolder;
+	font-size: 20px;
 	background:none;
 	border: none;
-	float: right;
-	color: #025f70;
-}
-
-li.checked{
-    text-decoration: line-through;
-	background-color: #9b1919;
-	text-decoration: line-through;
-  }  
-
-li.checked::before {
-    content: '';
-    position: absolute;
-    border-color: green;
-    border-style: solid;
-    border-width: 0 4px 4px 0;
-    top: 10px;
-    left: 16px;
-    transform: rotate(45deg);
-    height: 15px;
-    width: 7px;
+	float:right;
+	color: #c8dbdf;
+	padding-left: 20px;
 }
  
 input {
@@ -113,5 +150,5 @@ input {
 	min-width:15%;
 	padding: 12px;
 	border: none;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
 }
-

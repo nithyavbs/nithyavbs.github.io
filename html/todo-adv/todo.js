@@ -3,6 +3,7 @@ function addItem() {
     var new_item = document.getElementById("newItem").value;
     var count = document.getElementById("count").value;
     var description = document.getElementById("details").value;
+    var clearButton = document.getElementById("clear");
     // var lists=document.getElementsByID("lists").value;
     var item = new Object();
     item.name = document.getElementById("newItem").value;
@@ -53,7 +54,6 @@ function addItem() {
        div.style.setProperty('text-decoration', 'line-through');
        var cln=div.cloneNode(true);
        document.getElementById("list2").appendChild(cln);
-      
        //var list=document.getElementsByID("lists").value;
            }
   
@@ -72,4 +72,13 @@ function addItem() {
         var div = this.parentElement;
         div.parentNode.removeChild(div);
 }
+}
+function removeTodo(){
+    document.getElementById("list1").innerHTML = "";
+    document.getElementById("list2").innerHTML = "";
+    // var clearButton = document.getElementById("clear");
+    // var list1=document.getElementById("list1");
+    // list1.parentNode.removeChild(list1);
+    // var list2=document.getElementById("list2");
+    // list2.parentNode.removeChild(list2);
 }
