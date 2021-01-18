@@ -127,6 +127,8 @@ li {
 cursor:pointer;
 position:relative;
 	text-transform: capitalize;
+	text-align: inherit;
+
     font-weight: 600;
     font-size: large;
 	border: 2px solid #025f70;
@@ -138,7 +140,7 @@ position:relative;
 	-moz-transition: all 0.5s ease;
 	-ms-transition: all 0.5s ease;
 	-o-transition: all 0.5 ease;
-	font-family: 'M PLUS Rounded 1c', sans-serif
+	font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 li:hover {
@@ -149,26 +151,24 @@ li:hover {
 
 li > button {
 	font-weight:bolder;
-	font-size: 20px;
+	font-size:medium;
+	/* font-size: 20px; */
 	background:none;
 	border: none;
-	float:right;
+	float: right;
 	color: #c8dbdf;
 	padding-left: 20px;
-	text-align:center;
 	width: fit-content;
-	text-justify:auto;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	padding-right: 12px;
-	padding-left:12px;
+	padding-right: 18px;
+	padding-left:12px; 
+	padding-top: 1px;
+	padding-bottom: 0px;
+	padding-inline-start: 20px;
 }
  li>button:hover{
 	 background-color:#db1478;
 	 text-align: center;
-	 border-radius: 20px;
-	border-style: gr;
-	 
+	 border-radius: 10px;
  }
 input {
 	border-radius: 5px;
