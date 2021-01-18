@@ -69,6 +69,7 @@ function addItem() {
     var del_button = document.createElement("button");
     del_button.appendChild(document.createTextNode("X"));
     li.appendChild(del_button);
+    del_button.style.setProperty('text-align','center');
     del_button.onclick = function () {
         var div = this.parentElement;
         div.parentNode.removeChild(div);
