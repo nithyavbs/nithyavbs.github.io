@@ -143,6 +143,8 @@ position:relative;
 
 li:hover {
 	background: #0e4652;
+	border-radius: 20px;
+	border-style: gr;
 }
 
 li > button {
@@ -162,8 +164,10 @@ li > button {
 	padding-left:12px;
 }
  li>button:hover{
-	 background-color:rgb(211, 139, 139);
+	 background-color:#db1478;
 	 text-align: center;
+	 border-radius: 20px;
+	border-style: gr;
 	 
  }
 input {
