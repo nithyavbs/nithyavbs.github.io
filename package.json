@@ -1,0 +1,20 @@
+{
+  "name": "nithyavbs.github.io",
+  "version": "1.0.0",
+  "description": "To configure user name & email",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://3ac99ebbc42b97628e1efca624bb67e8463e9a84@github.com/nithyavbs/nithyavbs.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nithyavbs/nithyavbs.github.io/issues"
+  },
+  "homepage": "https://github.com/nithyavbs/nithyavbs.github.io#readme"
+}
