@@ -1,0 +1,25 @@
+
+.expense{
+    text-align: start;
+    border-bottom: solid gray 1px;
+}
+ul{
+    list-style-type:none;
+    padding-inline-start: 0px
+    }
+li{
+    line-break: auto;
+    float:inherit;
+}
+span{
+    padding-left: 10rem;
+    float: inline-end;
+    font-weight: bold;
+    margin-block-start: 20rem;
+}
+.payee{
+font-weight: bold;
+font-size: 12px;
+}
+
+
